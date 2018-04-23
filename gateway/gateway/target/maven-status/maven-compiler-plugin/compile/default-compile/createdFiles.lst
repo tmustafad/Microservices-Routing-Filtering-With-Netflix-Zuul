@@ -1,0 +1,2 @@
+com\turkmen\gateway\GatewayApplication.class
+com\turkmen\gateway\filters\pre\LoginPreFilter.class

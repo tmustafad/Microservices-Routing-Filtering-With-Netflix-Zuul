@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.turkmen.gateway.GatewayApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.913 s <<< FAILURE! - in com.turkmen.gateway.GatewayApplicationTests
+contextLoads(com.turkmen.gateway.GatewayApplicationTests)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connManFactory' defined in class path resource [org/springframework/cloud/commons/httpclient/HttpClientConfiguration$ApacheHttpClientConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.commons.httpclient.DefaultApacheHttpClientConnectionManagerFactory] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.commons.httpclient.DefaultApacheHttpClientConnectionManagerFactory] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+Caused by: java.lang.NoClassDefFoundError: org/apache/http/config/RegistryBuilder
+Caused by: java.lang.ClassNotFoundException: org.apache.http.config.RegistryBuilder
+
